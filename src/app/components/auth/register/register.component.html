@@ -1,0 +1,23 @@
+<div class="container col-sm-4">
+    <div class="form-group cold-lg-8">
+        <h3>Registro</h3>
+    </div>
+    <div class="card-body">
+        <p class="col-form-label col-form-label-lg" for="inputLarge">Para realizar su registro, por favor indique los siguientes datos</p>
+        <div class="form-group">
+        <!--<label class="col-form-label col-form-label-lg" for="inputLarge">Nombre</label>-->
+        <input class="form-control form-control-lg" [(ngModel)]="nombreUsuario" type="text" placeholder="Indique su nombre" id="inputLarge"/>
+        </div>
+        <div class="form-group">
+        <!--<label class="col-form-label col-form-label-lg" for="inputLarge">Correo</label>-->
+        <input class="form-control form-control-lg" [(ngModel)]="correo" type="email" placeholder="Indique su Correo" id="inputLarge"/>
+        </div>
+        <div class="form-group">
+        <!--<label class="col-form-label col-form-label-lg" for="inputLarge">Telefono</label>-->
+        <input class="form-control form-control-lg" [(ngModel)]="telefono" type="text" placeholder="Telefono" id="inputLarge"/>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" (click)="registro()">Registro</button>
+        <p class="col-form-label col-form-label-lg" for="inputLarge">Se enviará un correo electrónico para finalizar el registro</p>
+    </div>
+    
+</div>

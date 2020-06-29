@@ -1,0 +1,27 @@
+<div class="container col-sm-3">
+    <div class="form-group cold-lg-8">
+              <h3>Ingreso</h3>
+    </div>
+      
+    <div class="form-group">
+      <!--<label class="col-form-label col-form-label-lg" for="inputLarge">Usuario</label>-->
+      <input type="text" [(ngModel)]="idUsuario" placeholder="Usuario" class="form-control form-control-lg"/>
+    </div>
+    <div class="form-group">
+      <!--<label class="col-form-label col-form-label-lg" for="inputLarge">Contraseña</label>-->
+      <input class="form-control form-control-lg" [(ngModel)]="contrasena" type="password"  placeholder="Contraseña" />
+    </div>
+    <p>
+    <button type="submit" class="btn btn-success btn-lg" (click)="ingreso()">Ingresar</button>
+    </p>  
+    <div class="form-group cold-lg-8">
+      <h5>Olvidaste la contraseña?...</h5>
+      <p>Indicanos tu correo para entregarte una nueva contraseña</p>
+    </div>
+    <div class="form-group">
+      <input class="form-control form-control-lg" [(ngModel)]="correo" type="text"  placeholder="Correo Electrónico" />
+    </div>
+    <p>
+    <button type="submit" class="btn btn-primary btn-lg" (click)="olvidoContrasena()">Enviar</button>
+    </p>  
+  </div>
